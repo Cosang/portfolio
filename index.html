@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 0px;
+  
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: center;
+  display: inline;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+  font-size: 20px;
+  font-family: calibri;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+
+
+
+
+	.wrapper {
+		width: 800px;
+		margin: 0 auto;	
+	}
+	
+	.wrapper h2 {
+		text-align: left;
+		font-size: 15px;
+	}
+	
+	.line {
+		height: 25px;
+		min-width: 800px;
+		margin: 0 auto 10 px;
+		line-height: 25px;
+		font-size: 14px;
+		color: #fff;
+		padding: 0 0 0 10px;
+		position: relative;
+	}
+	
+	.line:before {
+		content: '';
+		width: 100%;
+		position: absolute;
+		left: 0;
+		height: 25px;
+		top: 0;
+		z-index: -2;
+		background: #4CAF50;
+	}
+	
+	.line:after {
+		content: '';
+		background: #006600;
+		height: 25px;
+		transition: 0.8s;
+		display: block;
+		width: 100%;
+		animation: animate 1 9s;
+		position: absolute;
+		top: 0;
+		left: 0; 
+		z-index: -1;
+	}
+	
+	.line1:after {
+		max-width: 25%;
+	}
+	
+	.line2:after {
+		max-width: 25%;
+	}
+	
+	.line3:after {
+		max-width: 20%;
+	}
+	
+	.line4:after {
+		max-width: 30%;
+	}
+	
+	.line5:after {
+		max-width: 20%;
+	}
+
+	@keyframes animate {
+		0% {
+		width: 0;
+		}
+		100% {
+		width: 100%;
+		}
+	
+	}
+
+
+</style>
+
+
+</head>
+<body>
+
+<div class="header">
+  <img src ="10-Interesting-Culinary-Careers.jpg" width = "1349px" height = "319px">
+</div>
+
+<div id="navbar">
+  <a class="active" href="javascript:void(0)">Home</a>
+  <a href="https://cosang.github.io/memory/">Memory game</a>
+  <a href="https://cosang.github.io/calcnutri/">Nutritional value chart</a>
+  <a href="https://cosang.github.io/Calculator/">Calculator</a>
+  <a href="https://github.com/Cosang">My GitHub</a>
+  <a href="https://www.linkedin.com/in/costina-anghel-7547058b/">Linkedin profile</a>
+  <a href="https://www.glassdoor.com/member/profile/index.htm">Glassdoor profile</a>
+</div>
+
+<div class="content">
+  <h3>Hello! <br>  My name is Costina Anghel. Welcome to my portfolio page.</h3>
+  <p> Currently I am training to become a front end developer. </p>
+  
+  <p>This is my progress so far:</p>
+  
+  
+  <div class = "wrapper">
+	<h2> HTML </h2>
+	<div class ="line line1"> 25% </div>
+	<h2> CSS </h2>
+	<div class ="line line2"> 25% </div>
+	<h2> JAVASCRIPT </h2>
+	<div class ="line line3"> 20% </div>
+	<h2> SQL </h2>
+	<div class ="line line4"> 30% </div>
+	<h2> ADOBE PHOTOSHOP </h2>
+	<div class ="line line5"> 20% </div>
+  
+  </div>
+  <br>
+  <p> As you can see, I am still a beginer in front end developing, but every day I keep learning something new. <br> Please check out my projects in the links above, and if you think there is a place for me on your team don't hesitate to contact me via LinkedIn or Glassdoor. <br> <br> Hope to hear from you soon!
+  
+  
+</div>
+
+<script src='scripts.js'></script>
+
+
+
+</body>
+</html>
