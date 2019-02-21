@@ -1,204 +1,251 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<style>
-body {
-  margin: 0;
-  background-color: #f5e4c9;
+	<html>
+	
+		<head>
+			<meta charset="utf-8" />
+			<title> Costina Anghel portfolio </title>
+			<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+			<style>
+				
+				body, html {
+				height: 100%;
+				
+				}	
+			
+							
+				.parallax {
+				background-image: url("1297150.jpg");
+				height: 100%;
+				width: 100%;
+				background-color: #000000;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				z-index:-1;
+
+				}
+				
+				#navbar {
+				overflow: hidden;
+				
+				}
+
+				#navbar a {
+				float: right;
+				display: inline;
+				color: #f2f2f2;
+				text-align: center-right;
+				padding: 14px 16px;
+				text-decoration: none;
+				font-size: 22px;
+				font-weight:bold;
+				}
+
+				#navbar a:hover {
+				color: white;
+				font-weight:lighter;
+				}
+
+				#navbar a.active {
+				background-color: #4CAF50;
+				color: white;
+				}
+			
+				.logo img {
+				width: 200px;
+				height: 200px;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				}
+				
+				.logo h2 {
+				font: 200 65px/0.8 'Great Vibes', Helvetica, sans-serif;
+				color: white;
+				text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+				text-align: center;
+				} 
+				
+				.logo{
+				padding-top: 120px;
+				}
+				
+				
+					
+			
+				.about h1 {
+				
+				font-family: 'Montserrat', sans-serif;
+				font-size: 57px;
+				color: #5a6770;
+				font-weight: 700;
+				letter-spacing: -1.5px;
+				line-height: 95px;
+				text-align: left;
+				}
+	
+				hr.green-band {
+				width: 100px;
+				height: 9px;
+				background-color: black;
+				margin-left: 0px;
+				margin-top: 20px;
+				}
+
+				.about p {
+				font-family: 'Lora', serif;
+				font-style: italic;
+				font-size: 23px;
+				letter-spacing: -.01em;
+				color: #5a6770;
+				line-height: 54px;
+				}
+
+			<!-- lista -->
+			
+			* {margin: 0; padding: 0;}
+
+			.lista {
+			margin: 20px;
+			text-align: center;
+			}
+
+			ul {
+			list-style-type: none;
+			width: 500px;
+ 			}
+
+			h3 {
+			font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+			}
+
+			li img {
+			float: left;
+			margin: 0 15px 0 0;
+			width: 100px; 
+			height: 100px
+			}
+
+			
+			li {
+			padding: 10px;
+			overflow: auto;
+			}
+
+			li:hover {
+			background: #eee;
+			}
+	 		
+		<!-- 	end lista -->
+		
+			
+			.about a:hover, a:active {
+			background-color: red;
+			}	
+				
+				
+				.center {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				
+				}
+
+			</style>
+		</head>
+	
+			<body>
+			
+		<div class="parallax">
+		
+		
+		<!-- prima bara -->
+			
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div id="navbar" class="container">
+ 			<a href="https://github.com/Cosang" target="_blank">My GitHub</a>
+			<a href="https://www.linkedin.com/in/costina-anghel-7547058b/" target="_blank">Linkedin profile</a>
+			<a href="https://cosang.github.io/calcnutri/" target="_blank">Nutritional value chart</a>
+			<a href="https://cosang.github.io/memory/" target="_blank">Memory game</a>
+			
+			</div>
+		</nav>
+		
+		
+			<!-- prima bara -->
+			
+			
+			<div class="logo">
+			<img src="beta1cropped.png" alt="logo" />
+			<h2>Costina Anghel </h2>
+			</div>
+			
+			 
+					
+			</div>
+			
+			
+		<div class = "about" id = "about" style="height:1000px;background-color:white;font-size:36px">
+			<h1> Hi! <br> I’m Costina Anghel, an amateur front-end developer looking to become a professional. <h1>
+			<hr class="green-band">
+			<p> With over a decade of business expeience in banking, financial and state institutions and a great passion for web development I could help translate your customer's requirements in web applications perfectly matched to their needs. </p>
+			<hr  style = "border-top: 1px solid #5a6770">
+			<p align="center"> After several months of study, i am proud to say that i am specializing in the following technologies:</p>
+			<hr  style = "border-top: 1px solid #5a6770">
+		
   
-}
-
-.responsive {
- max-width: 100%; 
-display:block; 
-height: auto;
-max-height:219px;
-}
-
-.navbar-inverse {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.navbar-inverse a {
-  float: center;
-  display: inline;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar-inverse a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.navbar-inverse a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.content {
-  padding: 16px;
-  font-size: 20px;
-  font-family: comic-sans;
-}
-
-
-
-
-
-
-
-
-	.wrapper {
-		width: 800px;
-		margin: 0 auto;	
-	}
+	<!-- 	lista  -->	
+	<span>
+		<div class = "lista">
+			<ul style="list-style-type: none; display: inline-block;">
+				<li>
+					<img src="html.jpg" >
+					<h3>HTML</h3>
+				</li>
+				<li>
+					<img src="css.jpg" > 
+					<h3>CSS</h3>
+				</li>
+				<li>
+					<img src="js.jpg" >
+					<h3>Javascript</h3>
+				</li>
+			</ul>
+			<ul style="list-style-type: none; display: inline-block;">
+				<li>
+					<img src="bootstrap.jpg" > 
+					<h3>Bootstrap</h3>
+      			</li>
+				<li>
+					<img src="sql.png" >
+					<h3>SQL</h3>
+				</li>
+				<li>
+					<img  src="ps.jpg" >
+					<h3>Photoshop</h3>
+				</li>
+			</ul>
+		</div>
+	</span>
+		
+		
+		<p> If you want to have some fun go ahead and try my <a href="https://cosang.github.io/memory/" style = "color:#5a6770" target="_blank">Memory game</a>, or my <a href="https://cosang.github.io/calcnutri/" style = "color:#5a6770" target="_blank">Nutritional value chart</a>, or you can check out my code on <a href="https://github.com/Cosang" style = "color:#5a6770" target="_blank"> GitHub. </a> </p>
+		
+		<p> I would like to get in touch with you! If you would too, you can contact contact me via <a href="https://www.linkedin.com/in/costina-anghel-7547058b/" target="_blank" style = "color:#5a6770">LinkedIn. </a>
+			
+			<br>
+			<br>
+				<p> Hope to hear from you soon! </p>
+					<img src="bye.gif" class="center">
+				
+			</div>
+		</body>
+	</html>
 	
-	.wrapper h2 {
-		text-align: left;
-		font-size: 15px;
-	}
 	
-	.line {
-		height: 25px;
-		min-width: 800px;
-		margin: 0 auto 10 px;
-		line-height: 25px;
-		font-size: 14px;
-		color: #fff;
-		padding: 0 0 0 10px;
-		position: relative;
-	}
 	
-	.line:before {
-		content: '';
-		width: 100%;
-		position: absolute;
-		left: 0;
-		height: 25px;
-		top: 0;
-		z-index: -2;
-		background: #4CAF50;
-	}
 	
-	.line:after {
-		content: '';
-		background: #006600;
-		height: 25px;
-		transition: 0.8s;
-		display: block;
-		width: 100%;
-		animation: animate 1 9s;
-		position: absolute;
-		top: 0;
-		left: 0; 
-		z-index: -1;
-	}
 	
-	.line1:after {
-		max-width: 25%;
-	}
 	
-	.line2:after {
-		max-width: 25%;
-	}
-	
-	.line3:after {
-		max-width: 20%;
-	}
-	
-	.line4:after {
-		max-width: 30%;
-	}
-	
-	.line5:after {
-		max-width: 20%;
-	}
-
-	@keyframes animate {
-		0% {
-		width: 0;
-		}
-		100% {
-		width: 100%;
-		}
-	
-	}
-
-
-</style>
-
-
-</head>
-<body>
-
-
-  <img src ="10-Interesting-Culinary-Careers.jpg" width = "1920px" height = "319px" class="responsive">
-
-
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#"></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="https://cosang.github.io/memory/">Memory game</a></li>
-        <li> <a href="https://cosang.github.io/calcnutri/">Nutritional value chart</a></li>
-        <li><a href="https://cosang.github.io/Calculator/">Calculator</a></li>
-	<li><a href="https://github.com/Cosang">My GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/costina-anghel-7547058b/">Linkedin profile</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-
-<div class="content">
-  <p>Hello! <br>  My name is Costina Anghel. Welcome to my portfolio page.
-  Currently I am training to become a front end developer. </p>
-  
-  <p>This is my progress so far:</p>
-  
-  
-  <div class = "wrapper">
-	<h2> HTML </h2>
-	<div class ="line line1"> 25% </div>
-	<h2> CSS </h2>
-	<div class ="line line2"> 25% </div>
-	<h2> JAVASCRIPT </h2>
-	<div class ="line line3"> 20% </div>
-	<h2> SQL </h2>
-	<div class ="line line4"> 30% </div>
-	<h2> ADOBE PHOTOSHOP </h2>
-	<div class ="line line5"> 20% </div>
-  
-  </div>
-  <br>
-  <p> As you can see, I am still a beginner in front end developing, but every day I keep learning something new. <br> Please check out my projects in the links above, and if you think there is a place for me on your team don't hesitate to contact me via LinkedIn or Glassdoor. <br> <br> Hope to hear from you soon!
-  
-  
-</div>
-
-
-
-</body>
-</html>
-
