@@ -3,57 +3,32 @@
 	
 		<head>
 			<meta charset="utf-8" />
+			<meta name="viewport" content = "width=device-width, initial-scale = 1.0">
 			<title> Costina Anghel portfolio </title>
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 			<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+			
+			
+			
 			<style>
 				
-				body, html {
-				height: 100%;
-				
+				body{
+				padding-top: 0px;		
 				}	
 			
 							
-				.parallax {
-				background-image: url("1297150.jpg");
-				height: 100%;
+				section.sec1 {
 				width: 100%;
-				background-color: #000000;
-				background-repeat: no-repeat;
-				background-attachment: fixed;
-				background-position: center;
-				background-repeat: no-repeat;
+				height: 100vh;
+				background-image: url("logobg.jpg");
 				background-size: cover;
-				z-index:-1;
 
 				}
 				
-				#navbar {
-				overflow: hidden;
 				
-				}
-
-				#navbar a {
-				float: right;
-				display: inline;
-				color: #f2f2f2;
-				text-align: center-right;
-				padding: 14px 16px;
-				text-decoration: none;
-				font-size: 22px;
-				font-weight:bold;
-				}
-
-				#navbar a:hover {
-				color: white;
-				font-weight:lighter;
-				}
-
-				#navbar a.active {
-				background-color: #4CAF50;
-				color: white;
-				}
 			
-				.logo img {
+				.sec1 img {
 				width: 200px;
 				height: 200px;
 				display: block;
@@ -61,21 +36,19 @@
 				margin-right: auto;
 				}
 				
-				.logo h2 {
+				.sec1 h2 {
 				font: 200 65px/0.8 'Great Vibes', Helvetica, sans-serif;
 				color: white;
 				text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
 				text-align: center;
 				} 
 				
-				.logo{
-				padding-top: 120px;
+				.sec1{
+				padding-top: 200px;
 				}
 				
 				
-					
-			
-				.about h1 {
+				.sec2 h1 {
 				
 				font-family: 'Montserrat', sans-serif;
 				font-size: 57px;
@@ -94,7 +67,7 @@
 				margin-top: 20px;
 				}
 
-				.about p {
+				.sec2 p {
 				font-family: 'Lora', serif;
 				font-style: italic;
 				font-size: 23px;
@@ -117,11 +90,11 @@
 			width: 500px;
  			}
 
-			h3 {
+			sec2 h3 {
 			font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
 			}
 
-			li img {
+			.about li img {
 			float: left;
 			margin: 0 15px 0 0;
 			width: 100px; 
@@ -129,70 +102,76 @@
 			}
 
 			
-			li {
+			.about li {
 			padding: 10px;
 			overflow: auto;
 			}
 
-			li:hover {
+			.about li:hover {
 			background: #eee;
 			}
 	 		
 		<!-- 	end lista -->
 		
 			
-			.about a:hover, a:active {
-			background-color: red;
-			}	
 				
 				
-				.center {
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
 				
-				}
-
 			</style>
 		</head>
 	
 			<body>
 			
-		<div class="parallax">
-		
-		
-		<!-- prima bara -->
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+			<div class = "container">
+				 <a class="navbar-brand" href="#">
+					<img src="beta1cropped.png" width="30" height="30" class="d-inline-block align-top" alt="">Portfolio</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto w-100 justify-content-end">
+						<li class="nav-item active">
+							<a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://cosang.github.io/memory/">Memory Game</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://cosang.github.io/calcnutri/">Nutritional value calculator</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://github.com/Cosang">GitHub</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://www.linkedin.com/in/costina-anghel-7547058b/">LinkedIn</a>
+						</li>
+					</ul>
+				</div>
+				</div>
+			</nav>
 			
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div id="navbar" class="container">
- 			<a href="https://github.com/Cosang" target="_blank">My GitHub</a>
-			<a href="https://www.linkedin.com/in/costina-anghel-7547058b/" target="_blank">Linkedin profile</a>
-			<a href="https://cosang.github.io/calcnutri/" target="_blank">Nutritional value chart</a>
-			<a href="https://cosang.github.io/memory/" target="_blank">Memory game</a>
 			
-			</div>
-		</nav>
 		
-		
-			<!-- prima bara -->
-			
-			
+		<section class = "sec1"?
+				
 			<div class="logo">
-			<img src="beta1cropped.png" alt="logo" />
-			<h2>Costina Anghel </h2>
+			
+			<h2> </h2>
 			</div>
 			
-			 
+		</section>	 
 					
-			</div>
-			
+		
+		<section class = "sec2">	
 			
 		<div class = "about" id = "about" style="height:1000px;background-color:white;font-size:36px">
 			<h1> Hi! <br> I’m Costina Anghel, an amateur front-end developer looking to become a professional. <h1>
 			<hr class="green-band">
-			<p> With over a decade of business experience in banking, financial and state institutions and a great passion for web development, I could help translate your customer's requirements in web applications perfectly matched to their needs. </p>
+			<p> With over a decade of business expeience in banking, financial and state institutions and a great passion for web development I could help translate your customer's requirements in web applications perfectly matched to their needs. </p>
 			<hr  style = "border-top: 1px solid #5a6770">
-			<p align="center"> After several months of study, I am proud to say that i am specializing in the following technologies:</p>
+			<p align="center"> After several months of study, i am proud to say that i am specializing in the following technologies:</p>
 			<hr  style = "border-top: 1px solid #5a6770">
 		
   
@@ -231,18 +210,22 @@
 	</span>
 		
 		
-		<p> If you want to have some fun, go ahead and try my <a href="https://cosang.github.io/memory/" style = "color:#5a6770" target="_blank">Memory game</a>, or my <a href="https://cosang.github.io/calcnutri/" style = "color:#5a6770" target="_blank">Nutritional value chart</a>. You can also check out my code on <a href="https://github.com/Cosang" style = "color:#5a6770" target="_blank"> GitHub. </a> </p>
+		<p> If you want to have some fun, go ahead and try my <a href="https://cosang.github.io/memory/" style = "color:#5a6770">Memory game</a> or my <a href="https://cosang.github.io/calcnutri/" style = "color:#5a6770">Nutritional value chart</a>, or you can check out my code on <a href="https://github.com/Cosang" style = "color:#5a6770" > GitHub. </a> </p>
 		
-		<p> I would like to get in touch with you! If you would too, you can contact contact me via <a href="https://www.linkedin.com/in/costina-anghel-7547058b/" target="_blank" style = "color:#5a6770">LinkedIn. </a>
+		<p> I would like to get in touch with you! If you would too, you can contact contact me via <a href="https://www.linkedin.com/in/costina-anghel-7547058b/"style = "color:#5a6770">LinkedIn. </a>
 			
 			<br>
 			<br>
 				<p> Hope to hear from you soon! </p>
-					<img src="bye.gif" class="center">
+					
 				
-			</div>
-		</body>
-	</html>
+			
+		</section>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
 	
 	
 	
